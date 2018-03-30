@@ -1,0 +1,21 @@
+<!-- 标题tab -->
+<view class="tab" style="height: {{tab_height}}px">
+    <block wx:for="{{tab}}">
+        <view class="tabitem {{index === tabselected ? 'selected' : ''}}" data-id="{{index}}" bindtap="bindTabTap" style="width: {{100/tab.length}}%;"> 
+          {{item}}
+        </view>
+    </block>
+</view>
+<view class="line withAnimate" style="width: {{100/tab.length}}%; margin-left:{{100/tab.length*tabselected}}%"/>
+
+<!-- 页面内容 -->
+<swiper current="{{swiperselected}}" bindchange="swiperChange" style="height: {{systeminfo.windowHeight-tab_height}}px" >
+  <block wx:for="{{content}}">
+    <swiper-item   >
+        <scroll-view scroll-y="true">
+          <view>{{item}}</view>
+        </scroll-view>
+    </swiper-item>
+  </block>
+</swiper>
+       

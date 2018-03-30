@@ -1,0 +1,35 @@
+.tab{
+    display: flex;
+    color: black;
+}
+.tab .selected{
+    color: #2ad8d2;
+}
+.tabitem{
+    text-align: center;
+}
+.line{
+    background-color: #2ad8d2; 
+    height: 2px; 
+}
+swiper{
+    margin-top: 50rpx;
+}
+scroll-view{
+    height: 100%;
+}
+.withAnimate {
+  transition: all 500ms ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+}
